@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    
+    <link rel="stylesheet" href="./resources/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./resources/bootstrap/bootstrap-grid.min.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>COVID-19 STATS - CS50x - Project</title>
+  </head>
+  <body >
+   
+    <br>
+    <div class="s-count-main">
+      <div class="s-count">
+        <div class="row">
+          <div class="col-sm-4" >
+            <div class="latest-report" >
+              <div class="country "  >
+                <div class="name  ">Loading...</div>
+                <div class="change-country ">change</div>
+                <div class="search-country hide">
+                  <div class="search-box s-box">
+                    <input
+                      type="text"
+                      id="search-input"
+                      placeholder="Search Country..."
+                    />
+                  </div>
+                  <div class="country-list "></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" >
+
+            <div class="s-heading">
+              <a href="./index.html"  ><h1>CO<font color="red">VI</font>D-19</h1>
+              <img src="./resources/img/logo.png" height="100" alt="">
+              <p>Follow up on developments in the Corona virus (symptoms, protection, infection data)</p>
+              <br>
+            </a>
+              </div>
+        
+          </div>
+        </div>
+      </div>
+     
+    </div>
+ 
+    
+  
+         
+   
+            <div class="s-box-main">
+
+           
+              <div class="dashbord "  >
+             
+               
+                <div class="chart ">
+                  <canvas id="axes_line_chart"></canvas>
+                </div>
+                
+              </div>
+              
+                  
+           
+           
+            </div>
+           
+              <div class="s-count-main">
+                <div class="s-count center " >
+                  <div class="latest-report row ">
+                    
+                      <div class="col-sm-4">
+                        <div class="total-cases  ">
+                          <div class="title">Total Cases</div> 
+                          <div class="value"> 0 </div>
+                          <div class="new-value">+0</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="recovered  ">
+                          <div class="title">Recovered</div>
+                          <div class="value">0</div>
+                          <div class="new-value">+0</div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="deaths  ">
+                          <div class="title">Deaths</div>
+                          <div class="value">0</div>
+                          <div class="new-value">+0</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            
+           
+           
+            <div class="row center">
+              
+              <div class="s-box-main col-md-4">
+               <div class="s-box">
+                 <div class="bar"></div>
+                 <img src="./resources/img/vector2.jpg" alt="1">
+                 <h1>Symptoms</h1>
+                 <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
+                 <a href="./Symptoms.html" class="s-btn">More</a>
+               </div>
+             </div>
+             <div class="s-box-main col-md-4">
+               <div class="s-box">
+                 <div class="bar"></div>
+                 <img src="./resources/img/vector1.jpg" alt="1">
+                 <h1>Advice</h1>
+                 <p>Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local health authority.</p>
+                 <a href="./Advice.html" class="s-btn">More</a>
+               </div>
+             </div>
+              </div>
+               
+            
+  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+      
+    >
+  </script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+    
+  </body>
+</html>
